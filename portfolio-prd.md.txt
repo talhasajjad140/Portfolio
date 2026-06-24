@@ -1,0 +1,614 @@
+# TALHA SAJJAD PORTFOLIO - COMPLETE PRODUCT REQUIREMENTS DOCUMENT
+
+## OBJECTIVE
+
+Build a premium personal portfolio website for Talha Sajjad that positions him as:
+
+* Full Stack Web Developer
+* AI Engineer
+* Embedded Systems Engineer
+* Designer with strong visual taste
+
+The website should immediately communicate technical competence, creativity, and professionalism.
+
+The final result should feel like a blend of:
+
+* Retro Editorial Design
+* Modern Brutalism
+* Premium Design Portfolio
+* Engineering Showcase
+
+This is not a resume website.
+
+This is a personal brand platform.
+
+---
+
+# TECHNOLOGY STACK
+
+Use:
+
+* Next.js 15 (App Router)
+* TypeScript
+* Tailwind CSS
+* Shadcn UI
+* Framer Motion
+* Lucide Icons
+
+Deployment Target:
+
+* Vercel
+
+---
+
+# DESIGN SYSTEM
+
+## Theme
+
+Retro Editorial
+
+## Visual Style
+
+* Cream background
+* Thick borders
+* Large typography
+* Magazine inspired layouts
+* Grid based spacing
+* Minimalistic
+* High contrast
+* Smooth interactions
+
+## Color Palette
+
+Background:
+#F5EAD7
+
+Text:
+#111111
+
+Primary Accent:
+#7FFF00
+
+Secondary Accent:
+#111111
+
+Border:
+#111111
+
+Success:
+#16A34A
+
+---
+
+# TYPOGRAPHY
+
+Headings:
+Bebas Neue
+
+Body:
+Inter
+
+Labels:
+Space Grotesk
+
+Rules:
+
+* Bold typography
+* Large hero headline
+* Editorial hierarchy
+* Responsive scaling
+
+---
+
+# RESPONSIVE REQUIREMENTS
+
+Mobile First Architecture
+
+Must work perfectly on:
+
+* 320px
+* 375px
+* 768px
+* 1024px
+* 1440px
+
+Requirements:
+
+* No horizontal scrolling
+* No clipped content
+* No overlapping sections
+* No fixed width containers
+* Responsive typography
+* Responsive images
+* Accessible navigation
+
+Desktop:
+
+Hero uses 2 columns
+
+Mobile:
+
+Hero stacks vertically
+
+Projects:
+
+* 1 column mobile
+* 2 columns tablet
+* 4 columns desktop
+
+Navigation:
+
+* Desktop navbar
+* Mobile hamburger menu
+
+Lighthouse Score:
+
+95+
+
+---
+
+# FILES PROVIDED
+
+Avatar Location:
+
+public/avatar/profile.png
+
+Resume Location:
+
+public/resume/Talha-Sajjad-CV.pdf
+
+Project Images:
+
+public/projects/
+
+---
+
+# NAVBAR
+
+Left:
+
+TALHA.SAJJAD
+
+Subtitle:
+
+FULL STACK DEVELOPER
+EMBEDDED SYSTEMS ENGINEER
+
+Center Navigation:
+
+* About
+* Skills
+* Projects
+* Designs
+* Contact
+
+Right CTA:
+
+HIRE ME
+
+Navbar:
+
+* Sticky
+* Border bottom
+* Blur effect on scroll
+
+---
+
+# HERO SECTION
+
+Layout:
+
+Desktop:
+Two Columns
+
+Mobile:
+Single Column
+
+Left Side Content:
+
+Small Label:
+
+HELLO, I'M TALHA
+
+Main Headline:
+
+NO CODE,
+JUST
+
+CREATIVITY
+
+Creativity should use accent color.
+
+Subheading:
+
+Building digital experiences through development, design, artificial intelligence and embedded systems.
+
+Buttons:
+
+VIEW WORK
+
+DOWNLOAD CV
+
+Right Side:
+
+Display avatar image from:
+
+public/avatar/profile.png
+
+Requirements:
+
+* Centered
+* Floating animation
+* Subtle mouse interaction
+* Grayscale
+* Preserve face proportions
+* No cropping
+
+Background Elements:
+
+* Editorial grid lines
+* Small labels
+* Technical markers
+* Minimal grain texture
+
+---
+
+# ABOUT SECTION
+
+Title:
+
+ABOUT ME
+
+Content:
+
+I am a Full Stack Web Developer and Embedded Systems Engineer who treats code and design as two sides of the same coin. Moving effortlessly between frontend interfaces and backend architecture, I adapt to any tech stack required from Next.js and React to Django and Flask.
+
+I pair this technical flexibility with a deep appreciation for editorial aesthetics, minimalist layout structures, and sharp typography.
+
+Whether I am building a fluid web application, integrating local AI, or working down to the hardware level, I engineer end to end solutions that are as visually striking as they are functionally robust.
+
+Add:
+
+READ MORE button
+
+---
+
+# EDUCATION SECTION
+
+Display as timeline card.
+
+Degree:
+
+BS in Embedded Systems
+
+University:
+
+University of Lahore
+
+Duration:
+
+2024 - 2028
+
+Status:
+
+In Progress
+
+---
+
+# SKILLS SECTION
+
+Display as animated cards.
+
+Categories:
+
+Programming & Systems
+
+* Python
+* C++
+* Embedded Systems
+* Hardware Integration
+
+Web Development
+
+* React
+* Next.js
+* Django
+* Flask
+* REST APIs
+
+Artificial Intelligence
+
+* Prompt Engineering
+* LLM Integration
+* AI Automation
+
+Tools
+
+* Git
+* GitHub
+* VS Code
+* Arduino
+* Figma
+* Photoshop
+* Capcut 
+* Claude
+
+---
+
+# PROJECTS SECTION
+
+Projects must load dynamically.
+
+Do not hardcode inside components.
+
+Data source:
+
+src/data/projects.ts
+
+Project type:
+
+interface Project {
+id
+title
+description
+image
+technologies
+github
+live
+category
+}
+
+Initial Projects:
+
+POS System (FBR Integrated)
+
+Description:
+Python based POS platform with inventory management and FBR integration for tax compliance and digital invoicing.
+
+AI Fitness Tracker
+
+Description:
+Tracks daily steps, calories, protein and carbohydrates while providing AI conversational support.
+
+AI Resume Builder
+
+Description:
+AI powered resume generation platform built using Python.
+
+Spider Robot
+
+Description:
+Robotics project focused on locomotion, calibration and embedded systems integration.
+
+Project Cards Must Include:
+
+* Image
+* Title
+* Description
+* Technology Stack
+* GitHub Button
+* Live Demo Button
+
+Hover Effects:
+
+* Lift animation
+* Border glow
+* Image zoom
+
+---
+
+# DESIGN SHOWCASE
+
+Separate from Projects.
+
+Purpose:
+
+Show UI/UX and design work.
+
+Layout:
+
+Responsive Grid
+
+Cards:
+
+* Hover zoom
+* Modal preview
+* Smooth animations
+
+Data must load dynamically.
+
+---
+
+# EXPERIENCE TIMELINE
+
+Create timeline section.
+
+Include:
+
+2024
+
+Started Embedded Systems Degree
+
+2025
+
+AI & Full Stack Development Focus
+
+2026
+
+Portfolio & Professional Projects
+
+Timeline must be visually attractive.
+
+---
+
+# ANIMATIONS
+
+Use Framer Motion.
+
+Required:
+
+* Hero reveal
+* Section fade in
+* Scroll animations
+* Project card hover
+* Skill card hover
+* Floating avatar
+* Smooth page transitions
+
+Avoid:
+
+* Heavy particle systems
+* Heavy Three.js
+* Performance intensive effects
+
+Performance first.
+
+---
+
+# CONTACT SECTION
+
+Title:
+
+LET'S BUILD SOMETHING MEANINGFUL
+
+Include:
+
+Email Placeholder
+
+GitHub Placeholder
+
+LinkedIn Placeholder
+
+Contact Form
+
+Fields:
+
+* Name
+* Email
+* Message
+
+Submit Button
+
+SEND MESSAGE
+
+---
+
+# FOOTER
+
+Display:
+
+Talha Sajjad
+
+Full Stack Developer & Embedded Systems Engineer
+
+Current Year
+
+Small Personal Motto:
+
+Engineering Ideas Into Reality
+
+---
+
+# SEO REQUIREMENTS
+
+Generate:
+
+* Metadata
+* OpenGraph
+* Twitter Cards
+* robots.txt
+* sitemap.xml
+* Structured Data
+
+Portfolio should rank properly.
+
+---
+
+# ACCESSIBILITY
+
+Requirements:
+
+* Semantic HTML
+* Keyboard navigation
+* Focus states
+* Proper contrast
+* ARIA labels
+
+WCAG friendly.
+
+---
+
+# PERFORMANCE
+
+Target:
+
+95+ Lighthouse
+
+Requirements:
+
+* Image optimization
+* Lazy loading
+* Font optimization
+* Dynamic imports
+* Minimal bundle size
+
+---
+
+# FOLDER STRUCTURE
+
+src/
+
+app/
+
+components/
+
+sections/
+
+hooks/
+
+lib/
+
+types/
+
+data/
+
+public/
+
+avatar/
+
+projects/
+
+designs/
+
+resume/
+
+---
+
+# FINAL DELIVERABLE
+
+Generate:
+
+* Complete Next.js project
+* Tailwind configuration
+* TypeScript types
+* Project data files
+* Reusable components
+* Responsive layouts
+* Framer Motion animations
+* SEO setup
+* Dark mode support
+* Vercel deployment ready
+
+After generation, perform a complete audit and automatically fix:
+
+* TypeScript errors
+* Accessibility issues
+* Mobile responsiveness issues
+* SEO issues
+* Performance issues
+
+The project should run successfully after:
+
+npm install
+
+npm run dev

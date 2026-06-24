@@ -1,0 +1,125 @@
+'use client';
+
+import { motion } from 'framer-motion';
+import { fadeInUp, staggerContainer } from '@/lib/animations';
+import { Mail, Github, Linkedin } from 'lucide-react';
+
+export function ContactSection() {
+  return (
+    <section id="contact" className="bg-cream text-black py-20 lg:py-32 border-b-2 border-black">
+      <div className="container-custom">
+        <motion.div
+          variants={staggerContainer}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.3 }}
+          className="max-w-3xl mx-auto"
+        >
+          {/* Section Title */}
+          <motion.h2
+            variants={fadeInUp}
+            className="font-heading text-5xl lg:text-6xl font-bold mb-4 text-black text-center"
+          >
+            Let's Build
+          </motion.h2>
+
+          <motion.h2
+            variants={fadeInUp}
+            className="font-heading text-5xl lg:text-6xl font-bold mb-12 text-black text-center"
+          >
+            Something <span className="text-lime">Meaningful</span>
+          </motion.h2>
+
+          {/* Social Links */}
+          <motion.div
+            variants={fadeInUp}
+            className="flex flex-col sm:flex-row gap-4 mb-16 justify-center"
+          >
+            <a
+              href="mailto:hello@example.com"
+              className="flex items-center justify-center gap-2 px-6 py-3 bg-black text-cream hover:bg-lime hover:text-black transition-colors border-2 border-black font-label font-bold uppercase text-sm tracking-wider"
+            >
+              <Mail size={20} />
+              <span>Email</span>
+            </a>
+
+            <a
+              href="https://github.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-2 px-6 py-3 bg-black text-cream hover:bg-lime hover:text-black transition-colors border-2 border-black font-label font-bold uppercase text-sm tracking-wider"
+            >
+              <Github size={20} />
+              <span>GitHub</span>
+            </a>
+
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-2 px-6 py-3 bg-black text-cream hover:bg-lime hover:text-black transition-colors border-2 border-black font-label font-bold uppercase text-sm tracking-wider"
+            >
+              <Linkedin size={20} />
+              <span>LinkedIn</span>
+            </a>
+          </motion.div>
+
+          {/* Contact Form */}
+          <motion.form
+            variants={fadeInUp}
+            className="space-y-6 bg-black/2 p-8 lg:p-12 border-2 border-black"
+          >
+            {/* Name Input */}
+            <div>
+              <label htmlFor="name" className="font-label text-xs uppercase font-bold tracking-wider block mb-2">
+                Name
+              </label>
+              <input
+                id="name"
+                type="text"
+                placeholder="Your name"
+                className="w-full px-4 py-3 bg-cream border-2 border-black font-body text-base focus:outline-lime focus:outline-offset-0 transition-colors"
+              />
+            </div>
+
+            {/* Email Input */}
+            <div>
+              <label htmlFor="email" className="font-label text-xs uppercase font-bold tracking-wider block mb-2">
+                Email
+              </label>
+              <input
+                id="email"
+                type="email"
+                placeholder="your@email.com"
+                className="w-full px-4 py-3 bg-cream border-2 border-black font-body text-base focus:outline-lime focus:outline-offset-0 transition-colors"
+              />
+            </div>
+
+            {/* Message Textarea */}
+            <div>
+              <label htmlFor="message" className="font-label text-xs uppercase font-bold tracking-wider block mb-2">
+                Message
+              </label>
+              <textarea
+                id="message"
+                placeholder="Your message..."
+                rows={6}
+                className="w-full px-4 py-3 bg-cream border-2 border-black font-body text-base focus:outline-lime focus:outline-offset-0 transition-colors resize-none"
+              />
+            </div>
+
+            {/* Submit Button */}
+            <motion.button
+              type="submit"
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+              className="w-full px-6 py-3 bg-lime text-black border-2 border-black font-label font-bold uppercase text-sm tracking-wider hover:bg-black hover:text-lime transition-colors"
+            >
+              Send Message
+            </motion.button>
+          </motion.form>
+        </motion.div>
+      </div>
+    </section>
+  );
+}
