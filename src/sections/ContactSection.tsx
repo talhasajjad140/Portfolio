@@ -14,12 +14,17 @@ export function ContactSection() {
 
     const form = event.currentTarget;
     const formData = new FormData(form);
+    const body = new URLSearchParams();
+
+    formData.forEach((value, key) => {
+      body.append(key, String(value));
+    });
 
     try {
-      await fetch('https://script.google.com/macros/s/AKfycbxZ2TIK_eUoeFjzPlYzBOSY-trlDgYd08bpb_sbfV3sFq0Rm38Wt691aA-zyQeN5MJjsw/exec', {
+      await fetch('https://script.google.com/macros/s/AKfycbxRa4olsVxGkIyCVWTiq9zj24EfegTzTLZllTrBdprxykQ15bVHjhyi69ronJXGFAlVfg/exec', {
         method: 'POST',
         mode: 'no-cors',
-        body: formData,
+        body,
       });
 
       form.reset();
