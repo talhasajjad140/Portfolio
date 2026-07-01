@@ -21,7 +21,7 @@ export function ContactSection() {
     });
 
     try {
-      await fetch('https://script.google.com/macros/s/AKfycbxRa4olsVxGkIyCVWTiq9zj24EfegTzTLZllTrBdprxykQ15bVHjhyi69ronJXGFAlVfg/exec', {
+      await fetch('https://script.google.com/macros/s/AKfycbzx9HHdgcX5UCNB57NBXfipF8gMyd5c9Rf2gL4qHi_zMKRg_8Gw6UBOkaKdKzf_2xcBpQ/exec', {
         method: 'POST',
         mode: 'no-cors',
         body,
