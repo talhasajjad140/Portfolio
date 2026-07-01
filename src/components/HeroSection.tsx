@@ -14,7 +14,7 @@ export function HeroSection() {
   return (
     <section className="min-h-screen bg-cream text-black relative overflow-hidden">
       
-      <div className="container-custom h-screen flex items-center">
+      <div className="container-custom min-h-[100svh] flex items-center py-8 lg:py-0">
         
         {/* Grid Background */}
         <div className="absolute inset-0 opacity-5 pointer-events-none">
@@ -33,11 +33,11 @@ export function HeroSection() {
           variants={staggerContainer}
           initial="hidden"
           animate="show"
-          className="w-full grid grid-cols-1 lg:grid-cols-2 gap-10 items-center relative z-10"
+          className="w-full grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 items-center relative z-10"
         >
 
           {/* LEFT SIDE */}
-          <motion.div className="order-2 lg:order-1">
+          <motion.div className="order-1 lg:order-1">
 
             <motion.p
               variants={fadeInUp}
@@ -93,13 +93,13 @@ export function HeroSection() {
           {/* RIGHT SIDE - YOUR CYBER IMAGE */}
           <motion.div
             variants={slideInRight}
-            className="order-1 lg:order-2 flex justify-center"
+            className="order-2 lg:order-2 flex justify-center"
           >
 
             <motion.div
               variants={float}
               animate="animate"
-              className="relative w-80 h-80 lg:w-[420px] lg:h-[420px]"
+              className="relative w-56 h-56 sm:w-72 sm:h-72 lg:w-[420px] lg:h-[420px]"
             >
 
               {/* CYBER IMAGE (NO FRAME, NO BOX) */}
