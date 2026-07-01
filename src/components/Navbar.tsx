@@ -61,13 +61,14 @@ export function Navbar() {
             </nav>
 
             {/* Right CTA - Desktop */}
-            <motion.button
+            <motion.a
+              href="#contact"
               className="hidden lg:block px-6 py-2 bg-lime text-black border-2 border-black font-label font-bold uppercase text-xs tracking-wider hover:bg-black hover:text-lime transition-colors"
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.2 }}
             >
               Hire Me
-            </motion.button>
+            </motion.a>
 
             {/* Mobile Menu Button */}
             <motion.button

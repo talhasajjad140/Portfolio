@@ -36,7 +36,7 @@ export function ContactSection() {
             className="flex flex-col sm:flex-row gap-4 mb-16 justify-center"
           >
             <a
-              href="mailto:hello@example.com"
+              href="mailto:talhasajjad140@gmail.com"
               className="flex items-center justify-center gap-2 px-6 py-3 bg-black text-cream hover:bg-lime hover:text-black transition-colors border-2 border-black font-label font-bold uppercase text-sm tracking-wider"
             >
               <Mail size={20} />
@@ -44,7 +44,7 @@ export function ContactSection() {
             </a>
 
             <a
-              href="https://github.com"
+              href="https://github.com/talhasajjad140"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-2 px-6 py-3 bg-black text-cream hover:bg-lime hover:text-black transition-colors border-2 border-black font-label font-bold uppercase text-sm tracking-wider"
@@ -54,7 +54,7 @@ export function ContactSection() {
             </a>
 
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/talha-sajjad-199040251/"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-2 px-6 py-3 bg-black text-cream hover:bg-lime hover:text-black transition-colors border-2 border-black font-label font-bold uppercase text-sm tracking-wider"

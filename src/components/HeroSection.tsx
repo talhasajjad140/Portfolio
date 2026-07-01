@@ -67,27 +67,25 @@ export function HeroSection() {
 
             <motion.div
               variants={fadeInUp}
-              className="flex flex-col sm:flex-row gap-4"
+              className="flex flex-col sm:flex-row gap-4 w-full"
             >
               <motion.button
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
-                className="px-8 py-3 bg-black text-cream border-2 border-black font-label text-sm uppercase tracking-wider hover:bg-lime hover:text-black transition-colors"
+                className="w-full sm:w-auto px-8 py-3 bg-black text-cream border-2 border-black font-label text-sm uppercase tracking-wider hover:bg-lime hover:text-black transition-colors"
               >
                 View Work
               </motion.button>
 
-              <a
-  href="/resume/Talha-Sajjad-CV.pdf"
-  download
-  className="inline-block"
->
-  <button
-    className="px-8 py-3 bg-transparent text-black border-2 border-black font-label font-bold uppercase text-sm tracking-wider hover:bg-black hover:text-cream transition-colors"
-  >
-    Download CV
-  </button>
-</a>
+              <motion.a
+                href="/resume/Talha-Sajjad-CV.pdf"
+                download
+                whileHover={{ scale: 1.05, y: -2 }}
+                whileTap={{ scale: 0.95 }}
+                className="inline-flex w-full sm:w-auto items-center justify-center px-8 py-3 bg-transparent text-black border-2 border-black font-label font-bold uppercase text-sm tracking-wider hover:bg-black hover:text-cream transition-colors"
+              >
+                Download CV
+              </motion.a>
             </motion.div>
 
           </motion.div>
